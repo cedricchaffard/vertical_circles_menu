@@ -1,0 +1,65 @@
+@import "libs/mixins";
+
+#menu{
+
+    height:30vh;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+a{
+    height:10vw;
+    width: 8vw;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    writing-mode:vertical-lr;
+    cursor:default;
+    transform: rotate(180deg);
+    background-color: none;
+    color:black;
+    &:hover{
+        transform: rotate(270deg);
+    }
+    transition: transform 2s;
+    transform-origin: top;
+    position:relative;
+    top:3.5vh;
+    font-family: "courier";
+}
+
+#circle1{
+    @include circle;
+    left:10vw;
+    top:10vh;
+}
+
+#circle2{
+    @include circle;
+    left:20vw;
+    top:10vh;
+}
+
+#circle3{
+    @include circle;
+    left:30vw;
+    top:10vh;
+}
+
+#circle4{
+    @include circle;
+    left:40vw;
+    top:10vh;
+}
+
+#circle5{
+    @include circle;
+    left:50vw;
+    top:10vh;
+}
+
+#circle6{
+    @include circle;
+    left:60vw;
+    top:10vh;
+}
